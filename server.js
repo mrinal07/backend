@@ -6,7 +6,9 @@ const express = require("express");
 
 const app = express();
 
-const allowedOrigins = ["https://669b2fa81a7db4733e9ec9d5--roaring-licorice-45898d.netlify.app","https://roaring-licorice-45898d.netlify.app"];
+// CORS added for Deployement purpose
+
+const allowedOrigins = ["https://mrinal-choudhary.netlify.app"];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
@@ -18,6 +20,7 @@ app.use(cors({
     return callback(null, true);
   }
 }));
+// CORS added for Deployement purpose
 
 const dbConfig = require("./config/dbConfig");
 
