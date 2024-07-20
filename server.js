@@ -6,7 +6,7 @@ const express = require("express");
 
 const app = express();
 
-const allowedOrigins = ["https://669b2fa81a7db4733e9ec9d5--roaring-licorice-45898d.netlify.app"];
+const allowedOrigins = ["https://669b2fa81a7db4733e9ec9d5--roaring-licorice-45898d.netlify.app","https://roaring-licorice-45898d.netlify.app"];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin) return callback(null, true);
